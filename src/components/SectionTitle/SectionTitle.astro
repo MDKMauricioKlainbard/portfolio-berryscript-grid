@@ -1,0 +1,14 @@
+---
+import "./style.less"
+
+interface Props {
+  title: string;
+}
+
+const { title }: Props = Astro.props;
+---
+
+<h1 class="section-title">
+  {title}
+  <div class="underline-section-title"></div>
+</h1>

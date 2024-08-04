@@ -1,0 +1,54 @@
+{
+    "MAURICIO-DESCRIPTION": {
+        "GREETING": "¡Hola, hola! Soy Mauricio, un joven estudiante de ingeniería, programación y desarrollo web. Encontré mi pasión en el desarrollo de código cuando programé por primera vez mi propio robot en Arduino, aunque recuerdo que terminé reventando la batería por accidente, ¡pero al menos el robot bailaba!",
+        "JOURNEY": "Hubo un tiempo en el que no pude centrarme demasiado en la programación, pero la retomé en la universidad cuando me asignaron la tarea de programar métodos numéricos para resolver problemas complejos de ingeniería. Me llevaba tan bien con el código que terminé siendo asistente de clase para enseñarles a otros a programar.",
+        "CURRENT-STATE": "Finalmente, decidí explotar mis capacidades en el mundo comercial y por eso me adentré en el desarrollo web. Mi aprendizaje fue acelerado, pero no sencillo; requirió un gran esfuerzo para alcanzar la experiencia que tengo hoy en día. ¡Claro, todavía hay mucho por aprender! Pero confío plenamente en que puedo ofrecer soluciones a todos sus problemas, ya que no creo en retos imposibles. Gracias a esa mentalidad es que ahora me encuentro aquí."
+    },
+    "ANAIS-DESCRIPTION": {
+        "GREETING": "¡Hola! Soy Anaïs, estudiante de diseño digital. Desde que tengo memoria, siempre me ha encantado dibujar y diseñar. Buscaba una forma adecuada de mostrar mis habilidades a otros, y ahora he encontrado esa oportunidad ofreciendo mi trabajo como diseñadora.",
+        "CURRENT-STATE": "Me resulta muy agradable y divertido dar color y forma a mis ideas, aunque aún tengo mucho camino por recorrer y es un aprendizaje constante. ¡Espero que podamos colaborar en muchos proyectos juntos!"
+    },
+    "PROJECT-INTRO": {
+        "INTRO": "¡Estos son nuestros grandiosos proyectos! Poco a poco vamos añadiendo más, conforme completamos nuevos trabajos. Cada uno de ellos es una medalla en nuestra colección, ¡y tenemos la ambición de conseguir muchas más! Así que, si decide trabajar con nosotros, ¡su proyecto también se convertirá en una de nuestras preciadas medallas!"
+    },
+    "PROJECT-KEYS": {
+        "numerical-methods": {
+            "DESCRIPTION": {
+                "PRESENTATION": "¡Este es un proyecto de Back! Tenemos una página en desarrollo que mostraremos próximamente, donde se podrán realizar llamadas al Back con una interfaz sumamente sencilla. Este proyecto consiste en métodos numéricos para ingenieros, que son formas de resolver problemas complejos de matemáticas de manera más sencilla, usando solo sumas y restas. Actualmente, el código cuenta con casi todos los métodos existentes para hallar soluciones de ecuaciones no lineales."
+            },
+            "LINK": "https://github.com/MDKMauricioKlainbard/numerical-methods"
+        },
+        "golden-elf": {
+            "DESCRIPTION": {
+                "PRESENTATION": "Golden Elf fue uno de nuestros primeros proyectos, donde desarrollamos una Landing Page para una colección NFT, junto con un backend para mintear y comerciar esos NFT. Este proyecto lo realizamos durante un torneo Hackathon, enfrentándonos a desarrolladores con mucha más experiencia, ya que nosotros apenas llevábamos un mes en el rubro. Con solo dos semanas para completarlo, trabajamos con mucho esfuerzo y dedicación, y conseguimos el primer lugar en el torneo. Fue una experiencia increíble que marcó el comienzo de nuestra trayectoria en el desarrollo de aplicaciones web."
+            },
+            "LINK": "https://nft-dapp-golden-elf-front.vercel.app"
+        },
+        "tykkera": {
+            "DESCRIPTION": {
+                "PRESENTATION": "Tykkera es un proyecto diseñado para simplificar la gestión de servicios en empresas de mantenimiento tecnológico. Permite a las empresas crear “tickets” para gestionar servicios, clientes, técnicos y ganancias. Incluye una Landing Page atractiva y un sistema de registro para las empresas. El panel de control del perfil ofrece herramientas gráficas para el seguimiento de servicios, como tablas con información detallada, gráficos de ganancias, gráficos de barras para el estado de los tickets emitidos e informes autogenerados en Excel. Tykkera facilita la administración y el análisis de los servicios ofrecidos, brindando a las empresas una visión clara y organizada de su operación."
+            },
+            "LINK": "https://www.tykkera.com"
+        }
+    },
+    "FORM-ERRORS": {
+        "NAME": {
+            "EMPTY": "¡No deje su nombre vacío! ¡No sea tímido!",
+            "SPECIAL-CHARS": "¡Oops! Lo sentimos, pero por motivos de seguridad, solo admitimos letras normales en este campo. ¡Nada de números o códigos maliciosos! >:(",
+            "TOO-LONG": "No juzgamos ningún nombre, creemos que todos son hermosos, ¡pero su nombre tan largo podría reventar nuestra casilla de mensajes! Por favor, abrevielo o ponga un nombre más corto."
+        },
+        "EMAIL": {
+            "EMPTY": "¡Oígame! Si deja su email vacío, ¡después no podremos contactarlo! D: (a menos que posea poderes telepáticos).",
+            "EMAIL-FORMAT": "El email ingresado debe ser un... email, claro... ¡Debe tener formato de email! No sé como le dicen los señores formales a eso."
+        },
+        "SUBJECT": {
+            "EMPTY": "¡No se olvide de poner un asunto para su mensaje! Eso lo hará más llamativo.",
+            "SPECIAL-CHARS": "¡Woops! Sepa disculpar pero no admitimos carácteres especiales en estos campos, solo letras normales. Nos pondría muy triste que con un código binario nos roben todas nuestras moras. :(",
+            "TOO-LONG": "¡Amamos su iniciativa de escribir un asunto tan detallado!, sin embargo, un asunto tan largo como este podría romper nuestra casilla de mensajes. Por favor, abrevie un poco más el asunto."
+        },
+        "MESSAGE": {
+            "EMPTY": "No se olvide de lo más importante, ¡el mensaje! Si no escribe un bonito mensaje, no sabremos si quiere trabajar con nosotros o si es una baya venenosa que nos viene a cobrar las deudas (de ser lo segundo, no tenemos dinero, aún)",
+            "SPECIAL-CHARS": "¡Oh no! En este campo permitimos letras, números, comas, puntos, signos de pregunta, de exclamación, paréntesis y el signo '$' (por razones obvias). Ya sabe, razones de seguridad. Queremos evitar abrir el email y acabar con un lorito comiéndose los archivos de nuestra computadora."
+        }
+    }
+}

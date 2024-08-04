@@ -1,0 +1,21 @@
+.nav-item {
+    transition: scale 0.2s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.underline-nav-item {
+    position: absolute;
+    bottom: -6px;
+    width: 80%;
+    height: 2px;
+    background-color: var(--line-color);
+    scale: 0;
+    transition: scale 0.2s ease-in-out
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}

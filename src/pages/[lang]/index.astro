@@ -1,0 +1,37 @@
+---
+import MainLayout from "@layouts/mainLayout/mainLayout.astro";
+import Header from "@components/Header/Header.astro";
+import Banner from "@components/Banner/Banner.astro";
+import AboutSection from "@components/AboutSection/AboutSection.astro";
+import ProjectSection from "@components/ProjectSection/ProjectSection.astro";
+import SkillSection from "@components/SkillSection/SkillSection.astro";
+import ContactSection from "@components/ContactSection/ContactSection.astro";
+import Footer from "@components/Footer/Footer.astro";
+
+export function getStaticPaths() {
+  return [
+    {params: {lang: 'en'}},
+    {params: {lang: 'es'}}
+  ]
+}
+
+const keywords = [
+  "JavaScript",
+  "TypeScript",
+  "Astro",
+  "Web Design",
+  "Responsive Web Design",
+];
+---
+
+<MainLayout title="BerryScript" description="h" keywords={keywords}>
+  <Header/>
+  <Banner/>
+  <main>
+    <AboutSection/>
+    <ProjectSection/>
+    <SkillSection/>
+    <ContactSection/>
+    <Footer/>
+  </main>
+</MainLayout>

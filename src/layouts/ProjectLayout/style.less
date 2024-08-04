@@ -1,0 +1,39 @@
+@import url(../../styles/fonts.less);
+
+.modal-project {
+    display: grid;
+    place-items: center;
+    row-gap: 30px;
+    header {
+        text-align: center;
+        display: grid;
+        place-items: center;
+        justify-items: center;
+        row-gap: 30px;
+        width: 100%;
+        font-family: @section-titles-font;
+        font-size: 4rem;
+        figure {
+            width: 80%;
+            img {
+                width: 100%;
+                border-radius: 20px;
+                border: 2px solid var(--line-color);
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            }
+        }
+    }
+    main {
+        display: grid;
+        place-items: center;
+        padding: 0;
+    }
+    footer {
+        text-align: center;
+        a {
+            color: var(--text-color)
+        }
+        margin-bottom: 30px;
+        width: 80%
+    }
+}

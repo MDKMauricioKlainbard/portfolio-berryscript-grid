@@ -1,0 +1,22 @@
+---
+import "./style.less";
+
+interface Props {
+  name: string;
+  description: string[];
+  reverse: boolean;
+  image: string;
+}
+
+const { name, description, reverse, image }: Props = Astro.props;
+---
+
+<div class="card-about">
+  <div class="image" id={`${reverse ? "anaisCard" : "mauricioCard"}`}>
+    <img src={image} />
+  </div>
+  <div class="description">
+    <h3>{name}</h3>
+    {description.map((p) => <p>{p}</p>)}
+  </div>
+</div>

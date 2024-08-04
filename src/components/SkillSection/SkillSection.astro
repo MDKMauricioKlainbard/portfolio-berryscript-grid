@@ -1,0 +1,19 @@
+---
+import "./style.less";
+import Badge from "@components/Badge/Badge.astro";
+import SectionTitle from "@components/SectionTitle/SectionTitle.astro";
+import { useTranslations, getLangFromUrl } from "@i18n/utils";
+import { baseBadgeNames } from "@components/Badge/svg";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section id="skills-section">
+  <SectionTitle title={t("nav.skills")} />
+  <div class="badges-container">
+    {baseBadgeNames.map(name=>(
+        <Badge name={name}/>
+      ))}
+  </div>
+</section>

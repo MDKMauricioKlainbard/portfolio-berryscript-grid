@@ -1,0 +1,16 @@
+---
+import SectionTitle from "@components/SectionTitle/SectionTitle.astro";
+import Slider from "@components/Slider/Slider.astro";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import translations from "@translations/translations";
+import "./style.less"
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section id="projects-section">
+    <SectionTitle title={t("nav.projects")}/>
+    <p>{translations.resources[lang]["PROJECT-INTRO"]["INTRO"]}</p>
+    <Slider/>
+</section>

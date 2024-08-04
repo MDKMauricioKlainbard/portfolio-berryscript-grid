@@ -1,0 +1,17 @@
+---
+import Modal from "@components/Modal/Modal.astro";
+import "./style.less"
+
+interface Props {
+  name: string;
+}
+
+const { name }: Props = Astro.props;
+---
+
+<figure class="badge" data-name={name}>
+</figure>
+
+<script>
+  import "./script.ts";
+</script>

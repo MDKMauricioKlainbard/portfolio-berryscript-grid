@@ -1,0 +1,55 @@
+{
+    "MAURICIO-DESCRIPTION": {
+        "GREETING": "Hello, hello! I'm Mauricio, a young student of engineering, programming, and web development. I found my passion in coding when I first programmed my own robot in Arduino, although I remember ending up blowing up the battery by accident—at least the robot danced!",
+        "JOURNEY": "There was a time when I couldn't focus much on programming, but I took it up again at university when I was assigned the task of programming numerical methods to solve complex engineering problems. I got along so well with the code that I ended up being a teaching assistant to help others learn to program.",
+        "CURRENT-STATE": "Eventually, I decided to leverage my skills in the commercial world, which is why I ventured into web development. My learning was fast-tracked but not easy; it required a lot of effort to gain the experience I have today. Of course, there is still much to learn! But I fully trust that I can offer solutions to all your problems, as I do not believe in impossible challenges. It is this mindset that has brought me here."
+    },
+    "ANAIS-DESCRIPTION": {
+        "GREETING": "Hello! I'm Anaïs, a digital design student. As far back as I can remember, I have always loved drawing and designing. I was looking for a proper way to showcase my skills to others, and now I have found that opportunity by offering my work as a designer.",
+        "CURRENT-STATE": "I find it very enjoyable and fun to bring color and shape to my ideas, although I still have a long way to go and it is a constant learning process. I hope we can collaborate on many projects together!"
+    },
+    "PROJECT-INTRO": {
+        "INTRO": "Here are our outstanding projects! We are gradually adding more as we complete new work. Each one is a medal in our collection, and we have the ambition to earn many more! So, if you decide to work with us, your project will also become one of our cherished medals!"
+    },
+    "PROJECT-KEYS": {
+        "numerical-methods": {
+            "DESCRIPTION": {
+                "PRESENTATION": "This is a Back project! We have a page in development that we will show soon, where you can make calls to the Back with an extremely simple interface. This project consists of numerical methods for engineers, which are ways to solve complex math problems more easily, using only addition and subtraction. Currently, the code includes almost all existing methods for finding solutions to nonlinear equations."
+            },
+            "LINK": "https://github.com/MDKMauricioKlainbard/numerical-methods"
+        },
+        "golden-elf": {
+            "DESCRIPTION": {
+                "PRESENTATION": "Golden Elf was one of our first projects, where we developed a Landing Page for an NFT collection, along with a backend to mint and trade those NFTs. We completed this project during a Hackathon tournament, competing against developers with much more experience, as we had only been in the field for a month. With only two weeks to complete it, we worked with great effort and dedication, and we secured first place in the tournament. It was an incredible experience that marked the beginning of our journey in web application development."
+            },
+            "LINK": "https://nft-dapp-golden-elf-front.vercel.app"
+        },
+        "tykkera": {
+            "DESCRIPTION": {
+                "PRESENTATION": "Tykkera is a project designed to simplify service management for technology maintenance companies. It allows companies to create 'tickets' to manage services, clients, technicians, and earnings. It includes an attractive Landing Page and a registration system for companies. The profile control panel offers graphical tools for service tracking, such as detailed information tables, earnings charts, bar charts for the status of issued tickets, and auto-generated Excel reports. Tykkera facilitates the administration and analysis of the services offered, providing companies with a clear and organized view of their operations."
+            },
+            "LINK": "https://www.tykkera.com"
+        }
+    },
+    "FORM-ERRORS": {
+    "NAME": {
+        "EMPTY": "Don't leave your name empty! Don't be shy!",
+        "SPECIAL-CHARS": "Oops! Sorry, but for security reasons, we only accept normal letters in this field. No numbers or malicious codes! >:(",
+        "TOO-LONG": "We don't judge any name; we believe all names are beautiful, but your name is so long it might overflow our message box! Please abbreviate it or use a shorter name."
+    },
+    "EMAIL": {
+        "EMPTY": "Hey there! If you leave your email empty, we won't be able to contact you later! D: (unless you have telepathic powers).",
+        "EMAIL-FORMAT": "The email entered must be an... email, of course... It must have an email format! I'm not sure what the formal term for that is."
+    },
+    "SUBJECT": {
+        "EMPTY": "Don't forget to include a subject for your message! It will make it more attractive.",
+        "SPECIAL-CHARS": "Whoops! Please excuse us, but we don't allow special characters in these fields, only normal letters. It would make us very sad if someone stole all our berries with binary code. :(",
+        "TOO-LONG": "We love your initiative to write such a detailed subject! However, a subject this long might break our message box. Please abbreviate the subject a bit more."
+    },
+    "MESSAGE": {
+        "EMPTY": "Don't forget the most important part, the message! If you don't write a nice message, we won't know if you want to work with us or if you're a poisonous berry here to collect debts (if it's the latter, we have no money yet).",
+        "SPECIAL-CHARS": "Oh no! In this field, we allow letters, numbers, commas, periods, question marks, exclamation points, parentheses, and the '$' sign (for obvious reasons). You know, security reasons. We want to avoid opening the email and ending up with a parrot eating the files on our computer."
+    }
+}
+
+}

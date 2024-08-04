@@ -1,0 +1,36 @@
+@import '../../styles/mixins.less';
+@import '../../styles/fonts.less';
+
+.project-card-container {
+    position: relative;
+    height: 100%;
+    .justify-items-column();
+    gap: 20px;
+
+    img {
+        max-width: 80%;
+        border-radius: 10px;
+        max-height: 80%;
+        padding: .15rem;
+        background-color: transparent;
+        transition: background-color 0.2s ease-in-out
+    }
+
+    .project-card-title {
+        font-family: @section-titles-font;
+        color: var(--title-color);
+        font-size: 20px;
+        width: 80%;
+        text-align: center;
+        border: 2px solid var(--line-soft-color);
+        border-radius: 20px;
+        padding: 5px;
+    }
+}
+
+.project-card-container:hover {
+    cursor: pointer;
+    img {
+        background-color: var(--line-color);
+     }
+}

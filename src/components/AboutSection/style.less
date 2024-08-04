@@ -1,0 +1,58 @@
+#about-section {
+    display: grid;
+    position: relative;
+    .star {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -3;
+    }
+    .big-star {
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    .small-star {
+        width: 4.21rem;
+        height: 4.21rem;
+    }
+}
+
+.star-first-pair {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+.star-second-pair {
+    position: absolute;
+    width: 12.5rem;
+    height: 12.5rem;
+    bottom: 0;
+    left: 10%;
+}
+
+.star-1 {
+    background-image: var(--star1);
+    position: absolute;
+}
+
+.star-2 {
+    background-image: var(--star2);
+    position: absolute;
+    bottom: 1rem;
+    right: -2rem;
+}
+
+.star-3 {
+    background-image: var(--star3);
+    position: absolute;
+}
+
+.star-4 {
+    background-image: var(--star4);
+    position: absolute;
+    right: -1rem;
+    top: 2rem;
+}

@@ -1,0 +1,25 @@
+@import url(../../styles/fonts.less);
+
+.section-title {
+    color: var(--title-color);
+    font-size: 2rem;
+    -webkit-text-stroke: 0.25em transparent;
+    font-family: @section-titles-font;
+    background-color: var(--stroke-color);
+    width: fit-content;
+    padding: 0.1rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 4px;
+    .underline-section-title {
+        width: 80%;
+        height: 6px;
+        background-color: var(--line-soft-color);
+        position: absolute;
+        bottom: -8px;
+        border: .1rem solid var(--background-color);
+    }
+}

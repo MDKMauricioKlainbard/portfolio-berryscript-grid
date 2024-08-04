@@ -1,0 +1,14 @@
+---
+import "./style.less"
+interface Props {
+  text: string;
+  enId: string;
+}
+
+const { text, enId }: Props = Astro.props;
+---
+
+<li id=`nav-item-${enId}` class="nav-item">
+    {text}
+    <div class="underline-nav-item"></div>
+</li>

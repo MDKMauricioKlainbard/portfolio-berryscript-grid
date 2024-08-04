@@ -1,0 +1,79 @@
+---
+import "./style.less";
+import ProjectCard from "@components/ProjectCard/ProjectCard.astro";
+import type { ProjectKeys } from "@custom-types/projectKeys.types.ts";
+import getModalProps from "@utils/modalKey";
+import { getLangFromUrl } from "@i18n/utils";
+import Modal from "@components/Modal/Modal.astro";
+import ProjectLayout from "@layouts/ProjectLayout/ProjectLayout.astro";
+
+const keys: ProjectKeys[] = ["golden-elf", "tykkera", "numerical-methods"];
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<div class="embla-slider-container">
+  <div class="embla">
+    <div class="embla__viewport">
+      <div class="embla__container">
+        {
+          keys.map((key) => {
+            const info = getModalProps(key, lang);
+            return (
+              <div class="embla__slide">
+                <ProjectCard
+                  title={info.title}
+                  image={info.image}
+                  id={info.key}
+                />
+              </div>
+            );
+          })
+        }
+      </div>
+    </div>
+    <div class="embla__prev">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="var(--line-color)"
+        width="2rem"
+        height="2rem"
+        viewBox="0 0 24 24"
+        ><path
+          d="m4.431 12.822 13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645z"
+        ></path></svg
+      >
+    </div>
+    <div class="embla__next">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="var(--line-color)"
+        width="2rem"
+        height="2rem"
+        viewBox="0 0 24 24"
+        ><path
+          d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
+        ></path></svg
+      >
+    </div>
+  </div>
+</div>
+
+{
+  keys.map((key) => {
+    const info = getModalProps(key, lang);
+    return (
+      <Modal id={info.key}>
+        <ProjectLayout title={info.title} image={info.image} link={info.link}>
+          {info.paragraphs.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </ProjectLayout>
+      </Modal>
+    );
+  })
+}
+
+<script>
+  import "./script.ts";
+</script>

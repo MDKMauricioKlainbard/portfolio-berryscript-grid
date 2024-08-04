@@ -1,0 +1,78 @@
+---
+import SectionTitle from "@components/SectionTitle/SectionTitle.astro";
+import "./style.less";
+import { useTranslations, getLangFromUrl } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section id="contact-section">
+  <SectionTitle title={t("section.contact")} />
+  <div class="container-form">
+    <form class="form-message" data-lang={lang}>
+      <div class="form-element">
+        <div class="text-line">
+          <label for="form-name">{t("form.name")}</label>
+          <div class="line-form"></div>
+        </div>
+        <input
+          class="input-form"
+          id="form-name"
+          name="form-name"
+          placeholder={t("form.placeholder-name")}
+        />
+        <span class="error-field hidden" id="error-name"></span>
+      </div>
+      <div class="form-element">
+        <div class="text-line">
+          <label for="form-email">{t("form.email")}</label>
+          <div class="line-form"></div>
+        </div>
+        <input
+          class="input-form"
+          id="form-email"
+          name="form-email"
+          placeholder={t("form.placeholder-email")}
+        />
+        <span class="error-field hidden" id="error-email"></span>
+      </div>
+      <div class="form-element">
+        <div class="text-line">
+          <label for="form-subject">{t("form.subject")}</label>
+          <div class="line-form"></div>
+        </div>
+        <input
+          class="input-form"
+          id="form-subject"
+          name="form-subject"
+          placeholder={t("form.placeholder-subject")}
+        />
+        <span class="error-field hidden" id="error-subject"></span>
+      </div>
+      <div class="form-element">
+        <div class="text-line">
+          <label for="form-message">{t("form.message")}</label>
+          <div class="line-form"></div>
+        </div>
+        <textarea
+          class="input-form text-form"
+          id="form-message"
+          name="form-message"
+          placeholder={t("form.placeholder-message")}></textarea>
+        <span class="error-field hidden" id="error-message"></span>
+      </div>
+      <div class="button-form">
+        <button type="submit">{t("form.submit")}</button>
+      </div>
+      <span class="error-form error-field hidden">{t("form.error")}</span>
+      <span class="successful-form hidden">
+        {t("form.successful")}
+      </span>
+    </form>
+  </div>
+</section>
+
+<script>
+  import "./script.js";
+</script>

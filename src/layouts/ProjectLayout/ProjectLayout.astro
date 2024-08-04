@@ -1,0 +1,27 @@
+---
+import { useTranslations, getLangFromUrl } from "@i18n/utils";
+import "./style.less"
+
+interface Props {
+  title: string;
+  image: string;
+  link: string;
+}
+
+const { title, image, link } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<article class="modal-project">
+  <header>
+    <h1>{title}</h1>
+    <figure><img src={image} alt={title} /></figure>
+  </header>
+  <main>
+    <slot />
+  </main>
+  <footer>
+    <a href={link}>{t("article.link-project")}</a>
+  </footer>
+</article>

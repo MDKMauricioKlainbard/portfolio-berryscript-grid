@@ -1,0 +1,38 @@
+---
+import CardAbout from "@components/CardAbout/CardAbout.astro";
+import SectionTitle from "@components/SectionTitle/SectionTitle.astro";
+import "./style.less";
+import { useTranslations, getLangFromUrl } from "@i18n/utils";
+import translations from "@translations/translations";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section id="about-section">
+  <SectionTitle title={t("nav.about")} />
+  <figure class="star-first-pair">
+    <div class="star-1 star big-star"></div>
+    <div class="star-2 star small-star"></div>
+  </figure>
+  <figure class="star-second-pair">
+    <div class="star-3 star big-star"></div>
+    <div class="star-4 star small-star"></div>
+  </figure>
+  <CardAbout
+    name="Mauricio Klainbard"
+    image="/images/mauricio.jpeg"
+    description={Object.values(
+      translations.resources[lang]["MAURICIO-DESCRIPTION"]
+    )}
+    reverse={false}
+  />
+  <CardAbout
+    name="Anaïs Garrofé"
+    image="/images/anais.jpeg"
+    reverse={true}
+    description={Object.values(
+      translations.resources[lang]["ANAIS-DESCRIPTION"]
+    )}
+  />
+</section>

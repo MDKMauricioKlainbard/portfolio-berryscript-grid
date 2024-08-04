@@ -1,0 +1,60 @@
+.card-about {
+    display: grid;
+    width: 100%;
+    row-gap: 1.5rem;
+
+    .image {
+        width: 80%;
+        padding: .4rem;
+        border-radius: 20%;
+        border: .4rem solid var(--line-color);
+        place-self: center;
+
+        img {
+            width: 100%;
+            border-radius: 20%;
+            border: .4rem solid #FAFAFA
+        }
+    }
+
+    .description {
+        place-self: center;
+        display: grid;
+        row-gap: .4rem;
+        width: 80%;
+
+        h3 {
+            font-size: 1.4rem;
+            background-color: var(--background-color);
+            -webkit-text-stroke: 0.25em transparent;
+            padding: 0.1rem;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+    }
+}
+
+@media(width >=768px) {
+    .card-about {
+        display: inline;
+        width: 80%;
+
+        .image {
+            float: left;
+            width: 20rem;
+            margin-right: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .description {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    #anaisCard {
+        float: right;
+        margin: 0;
+        margin-left: 2rem;
+    }
+}
