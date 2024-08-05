@@ -9,6 +9,7 @@ export const defaultLang = 'es';
 
 export const ui = {
     es: {
+        "page.description": "¡Portafolio de BerryScript! Desarrolladores Full Stack a su servicio.",
         'header.title': 'p o r t a f o l i o',
         'nav.about': 'Sobre nosotros',
         'nav.projects': 'Proyectos',
@@ -29,6 +30,7 @@ export const ui = {
         'form.placeholder-message': 'El huerto está lleno de cerezas, ¡esas dulces y horribles cerezas! Pero no te preocupes, tengo un plan secreto para liberarnos de ellas...'
     },
     en: {
+        "page.description": "BerryScript Portfolio! Full Stack Developers at your service.",
         'header.title': 'p o r t f o l i o',
         'nav.about': 'About us',
         'nav.projects': 'Projects',

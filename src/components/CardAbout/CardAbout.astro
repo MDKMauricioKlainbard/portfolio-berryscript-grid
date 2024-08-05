@@ -15,8 +15,8 @@ const { name, description, reverse, image }: Props = Astro.props;
   <div class="image" id={`${reverse ? "anaisCard" : "mauricioCard"}`}>
     <img src={image} alt={name}/>
     {reverse ? 
-    <img src="/gifs/JUNIMO-ANAIS.gif" class="JUNIMO-ABOUT-CARD" id="JUNIMO-ANAIS"> : 
-    <img src="/gifs/JUNIMO-MAURICIO.gif" id="JUNIMO-MAURICIO" class="JUNIMO-ABOUT-CARD">}
+    <img src="/gifs/JUNIMO-ANAIS.gif" alt="JUNIMO" class="JUNIMO-ABOUT-CARD" id="JUNIMO-ANAIS"> : 
+    <img src="/gifs/JUNIMO-MAURICIO.gif" alt="JUNIMO" id="JUNIMO-MAURICIO" class="JUNIMO-ABOUT-CARD">}
   </div>
   <div class="description">
     <h3>{name}</h3>

@@ -7,7 +7,7 @@ import ProjectSection from "@components/ProjectSection/ProjectSection.astro";
 import SkillSection from "@components/SkillSection/SkillSection.astro";
 import ContactSection from "@components/ContactSection/ContactSection.astro";
 import Footer from "@components/Footer/Footer.astro";
-import LittleStar from "@components/LittleStar/LittleStar.astro";
+import { useTranslations, getLangFromUrl } from "@i18n/utils";
 
 const keywords = [
   "JavaScript",
@@ -16,9 +16,12 @@ const keywords = [
   "Web Design",
   "Responsive Web Design",
 ];
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<MainLayout title="BerryScript" description="h" keywords={keywords}>
+<MainLayout title="BerryScript" description={t('page.description')} keywords={keywords}>
   <Header/>
   <Banner/>
   <main>
@@ -27,6 +30,5 @@ const keywords = [
     <SkillSection/>
     <ContactSection/>
     <Footer/>
-    <LittleStar/>
   </main>
 </MainLayout>

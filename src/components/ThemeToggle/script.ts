@@ -28,7 +28,7 @@ btnThemeToggle.addEventListener("click", () => {
         }
     ], { duration: 200 })
     return;
-})
+}, true)
 
 document.addEventListener('DOMContentLoaded', () => {
     let theme = getTheme();

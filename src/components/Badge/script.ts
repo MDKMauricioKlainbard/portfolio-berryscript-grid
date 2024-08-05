@@ -21,6 +21,6 @@ const updateBadges = () => {
     })
 }
 
-btnThemeToggle.addEventListener("click", updateBadges)
+btnThemeToggle.addEventListener("click", updateBadges, false)
 
 window.addEventListener('DOMContentLoaded', updateBadges)
