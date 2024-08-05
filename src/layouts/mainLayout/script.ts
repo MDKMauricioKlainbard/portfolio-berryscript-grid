@@ -16,14 +16,15 @@ const callbackObserver = (entries: any, observer: any) => {
         let id = entry.target.id;
         id = "nav-item-" + id.replace("-section", "")
         const navItem = document.getElementById(id) as HTMLElement;
+        const labelItem = navItem.querySelector("label") as HTMLElement
         const underline = navItem.querySelector(".underline-nav-item") as HTMLElement
         if (entry.isIntersecting) {
-            navItem.style.color = "var(--line-color)"
-            navItem.style.scale = "1.1"
+            labelItem.style.color = "var(--line-color)"
+            labelItem.style.scale = "1.1"
             underline.style.scale = "1"
         } else {
-            navItem.style.scale = "1"
-            navItem.style.color = "var(--text-color)"
+            labelItem.style.scale = "1"
+            labelItem.style.color = "var(--text-color)"
             underline.style.scale = "0"
         }
     })

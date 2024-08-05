@@ -4,6 +4,7 @@ import NavItem from "@components/NavItem/NavItem.astro";
 import ThemeToggle from "@components/ThemeToggle/ThemeToggle.astro";
 import LanguagePicker from "@components/LanguagePicker/LanguagePicker.astro";
 import type { TranslationKeys } from "@custom-types/translationKeys.types";
+import LittleStar from "@components/LittleStar/LittleStar.astro";
 import "./style.less";
 
 const lang = getLangFromUrl(Astro.url);
@@ -14,7 +15,10 @@ const navItems = ["nav.about", "nav.projects", "nav.skills", "nav.contact"];
 
 <header class="main-header">
   <div class="main-title-container">
-    <h1>{t("header.title")} <div class="underline-title"></div></h1>
+    <h1>{t("header.title")} 
+      <div class="underline-title"></div>
+      <LittleStar/>
+    </h1>
     <div class="config-container">
       <ThemeToggle />
       <LanguagePicker />

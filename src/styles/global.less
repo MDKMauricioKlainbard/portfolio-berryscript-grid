@@ -2,6 +2,7 @@
 @import "mixins.less";
 @import "fonts.less";
 @import "images.less";
+@import "animations.less";
 
 :root {
     .theme-light();
@@ -9,6 +10,9 @@
 
 body.dark {
     .theme-dark();
+    input, textarea {
+        background-color: #aec6dc;
+    }
 }
 
 body {
@@ -22,6 +26,8 @@ main {
     display: grid;
     row-gap: 60px;
     padding-top: 60px;
+    opacity: 0;
+    animation: appear-content 1s ease-in-out forwards;
 }
 
 section {
@@ -33,9 +39,10 @@ section {
 p {
     font-size: .9rem;
     line-height: 2rem;
-    text-align: justify;
+    text-align: left;
+    text-wrap: pretty;
     hyphens: auto;
-    word-spacing: -.05rem;
+    
     margin-bottom: .6rem;
     background-color: var(--background-color);
     -webkit-text-stroke: 0.25em transparent;
@@ -45,3 +52,14 @@ p {
     background-clip: text;
 }
 
+@media (width >= 1300px) {
+    p {
+        font-size: 18px;
+    }
+    a {
+        font-size: 18px;
+    }
+    li {
+        font-size: 15px;
+    }
+}

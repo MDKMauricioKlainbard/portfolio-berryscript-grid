@@ -1,0 +1,25 @@
+.little-star {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--title-color);
+    opacity: 0;
+    clip-path: polygon(
+        50% 0%,   
+        60% 40%,  
+        100% 50%, 
+        60% 60%,  
+        50% 100%, 
+        40% 60%, 
+        0% 50%,   
+        40% 40% 
+      );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: shining 1s ease-out forwards;
+    animation-delay: 1.65s;
+    position: absolute;
+    top: -.8rem;
+    right: -1rem;
+}
+

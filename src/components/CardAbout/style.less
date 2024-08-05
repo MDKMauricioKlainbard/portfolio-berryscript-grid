@@ -9,7 +9,21 @@
         border-radius: 20%;
         border: .4rem solid var(--line-color);
         place-self: center;
-
+        position: relative;
+        .JUNIMO-ABOUT-CARD {
+            position: absolute;
+            width: 4rem;
+            border: none;
+            margin: 0;
+        }
+        #JUNIMO-ANAIS {
+            top: 40%;
+            margin-left: 1rem;
+        }
+        #JUNIMO-MAURICIO {
+            top: -4rem;
+            left: 0;
+        }
         img {
             width: 100%;
             border-radius: 20%;
@@ -57,4 +71,25 @@
         margin: 0;
         margin-left: 2rem;
     }
+}
+
+@media(width >=1300px) {
+    .card-about {
+        .image {
+            width: 25rem
+        }
+    }
+}
+
+@media(width <= 550px) {
+    .card-about {
+        .image {
+            #JUNIMO-ANAIS {
+                top: -5rem;
+                right: 2rem;
+            }
+        }
+        
+    }
+    
 }

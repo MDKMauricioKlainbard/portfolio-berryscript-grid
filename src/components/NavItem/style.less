@@ -1,9 +1,21 @@
 .nav-item {
-    transition: scale 0.2s ease-in-out;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    label {
+        width: fit-content;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        transition: scale 0.2s ease-in-out;
+    }
+    transition: background-color 0.2s ease-in-out;
 }
 
 .underline-nav-item {
@@ -16,6 +28,8 @@
     transition: scale 0.2s ease-in-out
 }
 
-.nav-item:hover {
-    cursor: pointer;
+@media(width >= 1024px) {
+    .nav-item:hover {
+        background-color: var(--line-soft-color);
+    }
 }
