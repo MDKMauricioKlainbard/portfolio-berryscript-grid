@@ -15,7 +15,7 @@ export const ui = {
         'nav.projects': 'Proyectos',
         'nav.skills': 'Habilidades',
         'nav.contact': 'Contacto',
-        'section.contact': '¡Contáctanos',
+        'section.contact': '¡Contáctanos!',
         'article.link-project': '¡Visita la página del proyecto!',
         "form.name": 'Nombre',
         "form.email": 'Email',
