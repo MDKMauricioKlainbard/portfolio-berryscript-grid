@@ -18,6 +18,12 @@
             },
             "LINK": "https://staging.folderr.com/workflow"
         },
+        "dupre-electrosports": {
+            "DESCRIPTION": {
+                "PRESENTATION": "Online store developed with WooCommerce, focused on delivering a modern, fast, and responsive shopping experience. The site features a well-organized product catalog, efficient search filters, and an optimized checkout process. Custom solutions were implemented for inventory management, intuitive navigation, and mobile adaptability, along with performance improvements and SEO optimization. Plugins and custom templates were also configured to ensure a professional and visually appealing layout across all devices."
+            },
+            "LINK": "https://dupreelectrosports.com/"
+        },
         "numerical-methods": {
             "DESCRIPTION": {
                 "PRESENTATION": "This is a Back project! We have a page in development that we will show soon, where you can make calls to the Back with an extremely simple interface. This project consists of numerical methods for engineers, which are ways to solve complex math problems more easily, using only addition and subtraction. Currently, the code includes almost all existing methods for finding solutions to nonlinear equations."
