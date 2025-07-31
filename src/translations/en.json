@@ -12,6 +12,12 @@
         "INTRO": "Here are our outstanding projects! We are gradually adding more as we complete new work. Each one is a medal in our collection, and we have the ambition to earn many more! So, if you decide to work with us, your project will also become one of our cherished medals!"
     },
     "PROJECT-KEYS": {
+        "workflow-automation-platform": {
+            "DESCRIPTION": {
+                "PRESENTATION": "Web platform designed for automating business workflows. The system was rebuilt with a focus on performance and scalability, using an efficient ordering algorithm that enables real-time process execution with immediate visual feedback. Features were added to simplify the integration of workflows into external projects, either through HTML tags or via REST API. The system was also optimized to reduce errors, enhance user experience, and streamline maintenance and scalability for the development team."
+            },
+            "LINK": "https://staging.folderr.com/workflow"
+        },
         "numerical-methods": {
             "DESCRIPTION": {
                 "PRESENTATION": "This is a Back project! We have a page in development that we will show soon, where you can make calls to the Back with an extremely simple interface. This project consists of numerical methods for engineers, which are ways to solve complex math problems more easily, using only addition and subtraction. Currently, the code includes almost all existing methods for finding solutions to nonlinear equations."
